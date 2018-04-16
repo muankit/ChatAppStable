@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ankit.chatappstable.RegisterActivity">
+
+
+
+    <ImageView
+        android:id="@+id/register_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/main_background" />
+
+     <include
+        android:id="@+id/login_toolbar"
+        layout="@layout/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_above="@+id/scrollView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/icon" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/scrollView2">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="60dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
+            android:background="@drawable/trans_white_rectangle"
+            android:orientation="vertical">
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/reg_email"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:textColorHint="@color/textUsername">
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:hint="Username"
+                    android:textColor="@android:color/black" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/reg_password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="10dp"
+                android:textColorHint="@color/textUsername">
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:textColor="@android:color/black" />
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/login_Btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/get_started"
+                android:drawableLeft="@drawable/ic_play_arrow_white_18dp"
+                android:gravity="right|center_vertical"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="Get Started"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/login_new_register_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="@android:color/transparent"
+        android:text="Not registered?Create Account"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#673bb7</color>
+    <color name="colorPrimaryDark">#512da7</color>
+    <color name="colorAccent">#ff5521</color>
+    <color name="white">#ffffff</color>
+    <color name="textUsername">#ad807d</color>
+    <color name="get_started">#00a0ff</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="profileBackground">#00a0ff</color>
+    <color name="button_background">#ffbdb8</color>
+</resources>
