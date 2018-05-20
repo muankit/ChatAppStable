@@ -15,7 +15,7 @@ public class GetTimeAgo {
 
 
     public static String getTimeAgo(long time , Context ctx){
-        if (time < 10000000000L) {
+        if (time < 1000000000000L) {
             time *= 1000;
         }
 
